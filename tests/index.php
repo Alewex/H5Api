@@ -3,6 +3,8 @@
 // Require composer's autoload file.
 require '../vendor/autoload.php';
 
-$halo = new H5Api\HaloAPI('your api key here');
+$halo = new H5Api\HaloAPI('b6fbbdbe541444c5824e3cb1e74f313b');
 
-var_dump($halo);
+$nadedProfile = $halo->profile('naded');
+
+var_dump($nadedProfile->getEmblem());
