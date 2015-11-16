@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'H5Api\\' => array($baseDir . '/src'),
+    'H5Api\\' => array($baseDir . '/src/H5Api'),
 );
