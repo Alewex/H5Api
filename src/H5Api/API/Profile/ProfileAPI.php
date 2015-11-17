@@ -19,7 +19,7 @@ class ProfileAPI extends Request {
 		$url = "https://www.haloapi.com/profile/h5/profiles/{$this->gamertag}/emblem?size={$size}";
 		$request = parent::__construct($url, $this->api->key);
 
-		return $request;
+		return $request->responseInfo['url'];
 	}
 
 }
