@@ -3,7 +3,7 @@
 namespace H5Api;
 
 use H5Api\APIWrapper;
-use H5Api\API\Profile\ProfileAPI;
+use H5Api\API\Player;
 
 class HaloAPI {
 
@@ -13,10 +13,10 @@ class HaloAPI {
 		$this->api = new APIWrapper($apiKey);
 	}
 
-	public function profile($gamertag) {
-		$this->profile = new ProfileAPI($gamertag, $this->api);
+	public function player($gamertag) {
+		$this->player = new Player($gamertag, $this->api);
 
-		return $this->profile;
+		return $this->player;
 	}
 
 }
